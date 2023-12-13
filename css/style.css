@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ewert&display=swap');
 @font-face {
   font-family: "Abridor";
   src: url(Abridor.otf) format("opentype");
@@ -110,12 +112,25 @@ a:focus {
 }
 
 .header_section {
-  padding: 15px 0;
-  background-color: #ffffff;
+  background-color: #fff;
+  height: fit-content;
+  width: 100%;
 }
+
 .header_section .container-fluid {
-  padding-right: 25px;
-  padding-left: 25px;
+  padding: 15px 25px;
+  background-color: #fff;
+  max-width: 95%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo{
+  width: 200px;
+  height: auto;
+
 }
 
 .navbar-brand span {
@@ -131,7 +146,7 @@ a:focus {
   margin-left: auto;
 }
 .custom_nav-container .navbar-nav .nav-item .nav-link {
-  font-family: 'Abridor';
+  font-family: 'Bungee inline';
   padding: 5px 20px;
   color: #340E30 ;
   text-align: center;
@@ -212,10 +227,11 @@ a:focus {
   display: flex;
   align-items: center;
   position: relative;
-  padding: 45px 0 145px 0;
+  padding: 0px 0 145px 0;
 }
 .slider_section .row {
   align-items: center;
+  height: 100%;
 }
 .slider_section #customCarousel1 {
   width: 100%;
@@ -224,13 +240,32 @@ a:focus {
 .slider_section .detail-box {
   color: #00204a;
 }
+
+.carousel-item{
+  height: 700px;
+}
+
+.carousel-item .container{
+  height: 100%;
+}
+
+.carousel-item img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .slider_section .detail-box h1 {
-  font-family: "Abridor";
+  font-family: "Ewert";
   font-size: 45px;
   text-transform: uppercase;
   margin-bottom: 15px;
-  color: #ffffff;
+  background-image: linear-gradient(to top, #006414,#351834,#170008, #003400,#6a2f68);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #521c4d;
 }
+
 .slider_section .detail-box #texto02 {
   font-size: 80px;
 }
@@ -257,7 +292,7 @@ a:focus {
   border-radius: 15px;
   transition: all 0.3s;
   border: none;
-  font-family: "Abridor";
+  font-family: "Bungee inline";
 }
 .slider_section .detail-box .btn-box .btn1:hover {
   background-color: #340E30;
