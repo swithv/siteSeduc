@@ -521,99 +521,87 @@ a:focus {
   background-color: #007fa4;
 }
 
-/*team section */
-.team_section {
-  text-align: center;
-  background-color: #00204a;
-  color: #ffffff;
-}
-
-
-.team_section h2{
-  font-family: 'Allan';
-  font-weight: bold;
-  font-size: 45px;
-  color: #fff;
-}
-
-.team_section h2 span{
-  font-size: 90px;
-  color: #fff;
-}
-
-.team_section .heading_container {
-  justify-content: center;
-}
-
-.team_section .team_container {
-  padding: 0 15px;
-  padding-bottom: 20px;
-}
-
-.team_section .team_container .box {
-  padding: 35px 0 0 0;
-  border-radius: 5px;
-  overflow: hidden;
-  transition: all 0.1s;
-  margin-top: 45px;
-  background-color: #ffffff;
-}
-
-.team_section .team_container .box .img-box {
+/*! SECTION ESPECIES DISPONIVEIS */
+#especies_section{
+  background-color: rgb(101, 116, 86);
+  padding: 15px 0;
+  background-image: url("../images/especies_bg.png");
+  background-size: cover;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
-.team_section .team_container .box .img-box img {
-  width: 150px;
-  border-radius: 100%;
-  border: 2px solid #ffffff;
-}
-.team_section .team_container .box .detail-box {
-  margin: 25px 0;
-}
-.team_section .team_container .box .detail-box h5 {
-  font-family: "Bungee inline";
-  font-size: 30px;
-  color: #521C4D;
-  font-weight: bold;
-  position: relative;
-}
- 
-.team_section .team_container .box .detail-box p {
-  color: #0c0c0c;
-}
 
-.team_section .team_container .box .social_box {
-  padding: 10px 45px 20px 45px;
-  display: flex;
-  justify-content: space-between;
-}
-.team_section .team_container .box .social_box a {
+#especies_section h2{
   color: #ffffff;
-  font-size: 22px;
-}
-.team_section .team_container .box .social_box a:hover {
-  color: #340E30;
+  font-family: "Allan";
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.team_section .team_section_btn{
-  padding: 20px;
-  font-family: 'Bungee inline';
+#especies_section h2 span{
+  line-height: 85px;
+  font-size: 90px;
+}
+
+.especies_content{
+  display: flex;
+  gap: 15px;
+}
+
+.cards_especies{
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  border-radius: 20px;
+  align-items: center;
+  padding: 15px 20px;
+  max-width: 370px;
+  width: 100%;
+  gap: 15px;
+  transition: 300ms ease-in-out;
+}
+
+.cards_especies:hover{
+  scale: 1.02;
+  transition: 300ms ease-in-out;
+}
+
+.cards_especies img{
+  width: 70%;
+}
+
+.cards_especies h3{
+  font-family: "Bungee inline";
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: justify ;
   color: #521C4D;
-  border: none;
-  border-radius: 15px;
-  background-color:#fff;
-  transition: all 0.3s;
-  padding: 10px 20px;
+}
+
+#especies_section a{
+  font-family: "Bungee inline";
+  color: #521C4D;
   display: block;
   width: fit-content;
-  margin: 0px auto;
+  background-color: #fefefe;
+  border-radius: 15px;
+  padding: 10px 20px;
+  margin: 15px auto;
 }
 
-.team_section .team_section_btn a:hover{
+#especies_section a:hover{
   color: #340E30;
 }
+
+
+
+
+
+
+
 
 
 
