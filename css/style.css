@@ -601,8 +601,60 @@ a:focus {
 /*team section end*/
 
 /*-------ARVOROMETRO E MAPA--------*/
+#arvorometro_section h3{
+  font-family: "Allan";
+  font-weight: bold;
+  font-size: 80px;
+  text-align: center;
+  color: #611059;
+}
 
+#arvorometro_section .arvorometro_content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.mapouter {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  background: #fff;
+}
+
+.maprouter a {
+  color: #fff !important;
+  position: absolute !important;
+  top: 0 !important;
+  z-index: 0 !important;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  height: 500px;
+  width: 50%;
+}
+
+.gmap_canvas iframe {
+  position: relative;
+  z-index: 2
+}
+
+#arvorometro_section .text_content{
+  font-family: "Bungee inline";
+  font-weight: bold;
+  color: #521C4D;
+  text-align: center;
+  font-size: 30px;
+}
+
+#arvorometro_section .text_content .arvorometro_count{
+  font-size: 70px;
+  font-weight: bold;
+  color:#fff;
+  background-color: #611059;
+  padding: 5px 15px;
+}
 
 /*--------------FIM----------------*/
 
@@ -610,7 +662,9 @@ a:focus {
 /* -----------RODAPE SECTION----------------*/
 #rodape_section{
   background-image: url("../images/textura_rodape.png");
-  background-color: #521C4D;
+  backdrop-filter: grayscale(100%);
+  background-color: #611059;
+  padding: 30px 0;
 }
 
 #rodape_section h3{
@@ -630,8 +684,7 @@ a:focus {
   text-align: center;
   font-weight: bold;
   color: #fff;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 30px 0;
 }
 
 .realizacao_card{
@@ -641,33 +694,31 @@ a:focus {
 }
 
 .realizacao_card img{
-  width: 250px;
+  width: 300px;
   height: auto;
   padding-bottom: 40px;
 }
 
-.rodape_section .apoio_content h4{
-  text-align: center;
-  font-weight: bolder;
-  color: #fff;
-}
- 
-#apoio_title{
-  padding: 30px 20px;
+#rodape_section .apoio_content h4{
   text-align: center;
   font-weight: bold;
   color: #fff;
+  margin: 30px 0px;
+}
+ 
+.apoio_content_card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .apoio_content{
-  display: flex;
   justify-content: space-between;
-  
   padding-bottom: 20px;
 }
 
 .apoio_content img{
-  width: 250px;
+  width: 300px;
   height: auto;
 }
 
