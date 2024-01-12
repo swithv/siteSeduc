@@ -9,9 +9,14 @@ getYear();
 
 
 // client section owl carousel
+
+
 $(".client_owl-carousel").owlCarousel({
     loop: true,
     margin: 20,
+    touchDrag: true,
+    mouseDrag: true,
+    freeDrag: true,
     dots: false,
     nav: true,
     navText: [],
@@ -45,3 +50,4 @@ function myMap() {
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
 
+s

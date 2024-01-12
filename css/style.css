@@ -473,71 +473,6 @@ a:focus {
 
 
 /* ! ****************************************************/
-#amazonia_section .carrousel_content{
-  background-color: #007fa4;
-  padding: 0 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
-
-.wrapper{
-  max-width: 1200px;
-  position: relative;
-}
-
-.wrapper i{
-  top: 50px;
-  height: 46px;
-  width: 46px;
-  position: absolute;
-  cursor: pointer;
-  font-size: 1.2rem;
-  text-align: center;
-  line-height: 46px;
-  border-radius: 50%;
-  transform: translateY(-50%);
-  background-color: #340E30;
-}
-
-.wrapper i:first-child{
-  left: -23px;
-}
-
-.wrapper i:last-child{
-  right: -23px;
-}
-
-.wrapper .cards_carrousel{
-  font-size: 0px;
-  cursor: pointer;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.cards_carrousel img{
-  height: 300px;
-  object-fit: cover;
-  margin-left: 14px;
-  width: calc(100% /3);
-}
-
-.cards_carrousel img:first-child{
-  margin-left: 0px;
-}
-
-@media screen and (max-width: 900px){
-  .cards_carrousel img{
-    width: calc(100% / 2);
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .cards_carrousel img{
-    width: 100%;
-  }
-}
 
 /*! SECTION ESPECIES DISPONIVEIS */
 #especies_section{
@@ -619,18 +554,40 @@ a:focus {
 /*team section end*/
 
 /*-------ARVOROMETRO E MAPA--------*/
+#arvorometro_section{
+  position: relative;
+  background-image: url("../images/fundo_teste.png");
+}
+
+#arvorometro_section .container .sheets_decoration{
+  max-width: 300px;
+  max-height: 300px;
+  position: absolute;
+}
+
+#arvorometro_section .container .folha_bg01{
+  bottom: 10px;
+  right: 0px;
+  width: 150px;
+  height: auto;
+}
+
+
 #arvorometro_section h3{
   font-family: "Allan";
   font-weight: bold;
   font-size: 80px;
   text-align: center;
   color: #611059;
+  padding: 30px 20px;
 }
 
 #arvorometro_section .arvorometro_content{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  gap: 10px;
+  padding-bottom: 40px;
 }
 
 .mapouter {
@@ -649,13 +606,18 @@ a:focus {
 
 .gmap_canvas {
   overflow: hidden;
+  max-width: 700px;
   height: 500px;
-  width: 50%;
+  width: 100%;
+
 }
 
 .gmap_canvas iframe {
+  border-radius: 20px;
   position: relative;
-  z-index: 2
+  z-index: 2;
+  width: 100%;
+  height: 500px;
 }
 
 #arvorometro_section .text_content{
@@ -663,15 +625,16 @@ a:focus {
   font-weight: bold;
   color: #521C4D;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 #arvorometro_section .text_content .arvorometro_count{
-  font-size: 70px;
+  border-radius: 20px;
+  font-size: 75px;
   font-weight: bold;
   color:#fff;
   background-color: #611059;
-  padding: 5px 15px;
+  padding: 5px 30px;
 }
 
 /*--------------FIM----------------*/
@@ -679,7 +642,7 @@ a:focus {
 
 /* -----------RODAPE SECTION----------------*/
 #rodape_section{
-  background-image: url("../images/textura_rodape.png");
+  background-image: url("../images/fundo_teste.png");
   backdrop-filter: grayscale(100%);
   background-color: #611059;
   padding: 30px 0;
