@@ -474,6 +474,34 @@ a:focus {
 
 /* ! ****************************************************/
 
+/* AMAZONIA SECTION */
+#amazonia_section{
+  background-image: url("../images/fundo_teste.png");
+}
+
+#amazonia_section .container h2{
+  font-family: "Allan";
+  font-weight: bold;
+  font-size: 80px;
+  color: #340E30;
+  text-align: center;
+}
+#amazonia_section .img_amazonia{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#amazonia_section .container p{
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+
+
+/* END AMAZONIA SECTION */
+
 /*! SECTION ESPECIES DISPONIVEIS */
 #especies_section{
   background-color: rgb(101, 116, 86);
@@ -568,9 +596,35 @@ a:focus {
 #arvorometro_section .container .folha_bg01{
   bottom: 10px;
   right: 0px;
-  width: 150px;
+  width: 220px;
+  height: auto;
+} 
+
+#arvorometro_section .container .folha_bg02{
+  top: 10px;
+  left: 0px;
+  width: 220px;
   height: auto;
 }
+
+/* #arvorometro_section .container .folha_bg03{
+  bottom: 15px;
+  right: 0;
+  width: 200px;
+  height: auto;
+  transform: scaleX() -10px;
+} */
+
+/* #arvorometro_section .container .folha_bg04{
+  bottom: 5px;
+  left: 0px;
+  width: 150px;
+  height: auto;
+} */
+
+
+
+
 
 
 #arvorometro_section h3{
