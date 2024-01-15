@@ -114,6 +114,8 @@ a:focus {
 }
 
 .header_section {
+  position: fixed;
+  z-index: 3;
   background-color: #fff;
   height: fit-content;
   width: 100%;
@@ -271,7 +273,7 @@ a:focus {
   color: #fff;
 }
 
-.slider_section .detail-box #texto02 {
+.slider_section .detail-box span {
   font-weight: bold;
   font-size: 80px;
 }
@@ -355,6 +357,7 @@ a:focus {
 
 /********************************************************************/
 #noticias{
+ background-image: url("../images/fundo_teste.png");
  min-height: 100vh;
  padding: 50px;
 }
@@ -414,6 +417,10 @@ a:focus {
 
 
 /*! ****************************************************************/
+  #about_section{
+    background-image: url("../images/fundo_teste.png");
+  }
+
    #about_section .container h2{
     text-align: center;
     font-family: 'Allan';
@@ -476,6 +483,7 @@ a:focus {
 #amazonia_section{
   min-height: 100vh;
   position: relative;
+  background-image: url("../images/fundo_teste.png");
 }
 
 #amazonia_section .amazonia_section_container h2{
@@ -583,26 +591,36 @@ a:focus {
 #arvorometro_section{
   position: relative;
   background-image: url("../images/fundo_teste.png");
+  min-height: 90vh;
+  display: flex;
+  align-items:center ;
 }
 
-#arvorometro_section .container .sheets_decoration{
+#arvorometro_section .container-fluid .sheets_decoration{
   max-width: 300px;
   max-height: 300px;
   position: absolute;
 }
 
-#arvorometro_section .container .folha_bg01{
-  bottom: 10px;
-  right: 0px;
-  width: 220px;
+#arvorometro_section .container-fluid h3, #arvorometro_section .container-fluid .arvorometro_content{
+  z-index: 1;
+  position: relative;
+}
+
+#arvorometro_section .container-fluid .folha_bg01{
+  top: 5%;
+  left: -4%;
+  width: 500px;
   height: auto;
+  transform: scaleX(-1);
 } 
 
-#arvorometro_section .container .folha_bg02{
-  top: 10px;
-  left: 0px;
-  width: 220px;
+#arvorometro_section .container-fluid .folha_bg02{
+  bottom: 10px;
+  right: -0.9%;
+  width: 500px;
   height: auto;
+  transform: scaleX(-1);
 }
 
 #arvorometro_section h3{
@@ -638,10 +656,9 @@ a:focus {
 
 .gmap_canvas {
   overflow: hidden;
-  max-width: 700px;
+  max-width: 800px;
   height: 500px;
   width: 100%;
-
 }
 
 .gmap_canvas iframe {
@@ -657,7 +674,7 @@ a:focus {
   font-weight: bold;
   color: #521C4D;
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 #arvorometro_section .text_content .arvorometro_count{
