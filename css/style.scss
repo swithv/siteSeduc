@@ -6,10 +6,7 @@ $primary2: #00204a;
 $textCol: #1f1f1f;
 
 // import fonts - font-family: 'Open Sans', sans-serif;
-@font-face {
-  font-family: 'Abridor';
-  src: url(Abridor.otf) format('opentype');
-}
+
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
 
 @mixin main-font {
